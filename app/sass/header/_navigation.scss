@@ -1,0 +1,55 @@
+.navigation {
+	float: left;
+	width: 100%;
+	background-color: $blue;
+	border-bottom: 1px solid #fff;
+	ul {
+		padding: 0;
+		margin: 0;
+		float: left;
+		width: 100%;
+		list-style: none;
+		li {
+			float: left;
+			position: relative;
+			a {
+				float: left;
+				width: 100%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding: 12px 21px;
+				text: #fff uppercase 15px;
+				&:hover {
+					background-image: url('../img/menu_bg.png');
+				}
+			}
+			ul {
+				display: none;
+				position: absolute;
+				top: 100%;
+				background-color: $blue;
+				width: 230px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding: 2px;
+				padding-bottom: 10px;
+				li {
+					float: left;
+					width: 100%;
+					border-bottom: 1px solid #fff;
+					a {
+						padding: 12px 15px;
+						text: #fff uppercase 14px;
+					}
+				}
+			}
+			&:hover {
+				ul {
+					display: block;
+				}
+			}
+		}
+	}
+}
