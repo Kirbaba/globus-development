@@ -1,0 +1,15 @@
+.icon {
+	display: inline-block;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	&_phone {
+		size: 29px;
+		background-image: url('../img/call10.png');
+		margin-right: 10px;
+		vertical-align: top;
+		margin-top: 5px;
+	}
+}

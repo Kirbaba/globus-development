@@ -26,7 +26,6 @@ var postcss = require('gulp-postcss'),
     shortspacing = require('postcss-short-spacing'),
     focus = require('postcss-focus'),
     sorting = require('postcss-sorting'),
-    fontmagic = require('postcss-font-magician'),
     fixes = require('postcss-fixes');
 
 
@@ -59,16 +58,9 @@ gulp.task('sass', function() { // Создаем таск Sass
     var processors = [
         assets,
         short,
-        fontmagic({
-            async: 'app/js/fontloader.js'
-        }),
         fixes,
         autoprefixer(['last 5 versions', '> 5%', 'ie 8', 'ie 7'], {
             cascade: true
-        }),
-        pxtorem({
-            rootValue: 14,
-            replace: false
         }),
         focus,
         sorting(),
