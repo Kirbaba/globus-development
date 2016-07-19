@@ -1,0 +1,77 @@
+.map {
+	@extend .news;
+	padding: 0;
+	margin: 0;
+	&__wrap {
+		float: left;
+		width: 100%;
+		position: relative;
+	}
+	&_canvas {
+		float: left;
+		width: 100%;
+		height: 465px;
+	}
+	h2 {
+		margin: 0;
+		padding: 5px 0;
+	}
+	&__content {
+		position: absolute 0;
+		pointer-events: none;
+	}
+	&__form {
+		position: absolute;
+		width: 375px;
+		top: 40px;
+		right: 15px;
+		pointer-events: initial;
+		h3 {
+			text: $blue uppercase center 18px;
+			padding: 30px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			background-color: #FFF;
+			margin: 0;
+		}
+		&_box {
+			float: left;
+			width: 100%;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 30px 65px;
+			background-color: rgba(255,255,255,.7);
+		}
+		&_inp {
+			width: 100%;
+			margin-bottom: 10px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 10px;
+			text: $blue 14px;
+			outline: none;
+			border: 1px solid #9F9F9F;
+		}
+		&_btn {
+			width: 100%;
+			margin: 10px 0;
+			padding: 10px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			background-color: $green;
+			@include transition(.2s);
+			text: #fff uppercase 14px;
+			outline: none;
+			border: none;
+			cursor: pointer;
+			&:hover {
+				background-color: darken($green, 10%);
+			}
+		}
+	}
+}
+
