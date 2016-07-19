@@ -1,3 +1,5 @@
+ var swiper_arr = [];
+
 var swiper = new Swiper('.banner', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
@@ -7,6 +9,19 @@ var swiper = new Swiper('.banner', {
     paginationClickable: true,
     loop: true
 });
+
+var swiper_deals = new Swiper('.deals__carousel', {
+    pagination: '.deals__carousel-pagination',
+    paginationClickable: true,
+    nextButton: '.deals__carousel-next',
+    prevButton: '.deals__carousel-prev',
+    spaceBetween: 30,
+    paginationClickable: true,
+    loop: true,
+    slidesPerView: 3
+});
+
+
 
 $(window).resize(function() {
 	var ww = $(window).width();
