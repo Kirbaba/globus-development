@@ -108,3 +108,65 @@
 	}
 }
 
+
+.objects {
+	float: left;
+	width: 100%;
+	position: relative;
+	background-image: url('../img/wall_bg.png');
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	padding: 10px 0;
+	&__item {
+		float: left;
+		width: 1 / 6 *100%;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 0 20px;
+		margin: 15px 0;
+		&_thumb {
+			position: relative;
+			display: block;
+			size: 156px;
+			background-image: url('../img/object_bg.png');
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			padding: 5px;
+			z-index: 2;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: 50%;
+			}
+		}
+		&_title {
+			position: relative;
+			display: block;
+			size: 156px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+			background-color: $blue;
+			@include transition(.2s);
+			z-index: 1;
+			text: #fff center 16px;
+			padding-top: 80px;
+			margin-top: -75px;
+		}
+		&:hover {
+			.objects__item_title {
+				background-color: #56ABD6;
+			}
+		}
+	}	
+}
