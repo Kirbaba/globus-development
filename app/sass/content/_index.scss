@@ -191,44 +191,30 @@
 		    z-index: 9;
 		}
 		&:before, &:after {
-			z-index: 9;
-		}
-		&:before {
 			content: "";
 			position: absolute;
 			width: 35%;
 			height: 16px;
 			top: 50%;
-			left: 0;
+			z-index: 9;
 			-webkit-transform: translateY(-50%);
 			   -moz-transform: translateY(-50%);
 			    -ms-transform: translateY(-50%);
 			     -o-transform: translateY(-50%);
 			        transform: translateY(-50%);
-			background-image: url('../img/border-left.png');
 			-webkit-background-size: contain;
 			     -o-background-size: contain;
 			        background-size: contain;
 			background-repeat: no-repeat;
+		}
+		&:before {			
+			left: 0;			
+			background-image: url('../img/border-left.png');
 			background-position: 100% 50%;		
 		}
 		&:after {
-			content: "";
-			position: absolute;
-			width: 35%;
-			height: 16px;
-			top: 50%;
-			right: 0;
-			-webkit-transform: translateY(-50%);
-			   -moz-transform: translateY(-50%);
-			    -ms-transform: translateY(-50%);
-			     -o-transform: translateY(-50%);
-			        transform: translateY(-50%);
+			right: 0;			
 			background-image: url('../img/border-right.png');
-			-webkit-background-size: contain;
-			     -o-background-size: contain;
-			        background-size: contain;
-			background-repeat: no-repeat;
 			background-position: 0 50%;
 		}
 	}
@@ -325,33 +311,94 @@
 	}
 }
 
-/* Pagination Styles */
-
-.swiper-container-vertical {
-	> .deals__carousel-pagination {
-	  right: 10px;
-	  top: 50%;
-	  -webkit-transform: translate3d(0px, -50%, 0);
-	  -moz-transform: translate3d(0px, -50%, 0);
-	  -o-transform: translate(0px, -50%);
-	  -ms-transform: translate3d(0px, -50%, 0);
-	  transform: translate3d(0px, -50%, 0);
+.handedover {
+	float: left;
+	width: 100%;
+	position: relative;
+	background-image: url('../img/texture.png');
+	text-align: center;
+	h2 {
+		width: 100%;
+		position: relative;
+		text-align: center;
+		text: #131826 uppercase 36px;
+		z-index: 9;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			width: 35%;
+			height: 16px;
+			top: 50%;
+			z-index: 9;
+			-webkit-transform: translateY(-50%);
+			   -moz-transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			     -o-transform: translateY(-50%);
+			        transform: translateY(-50%);
+			-webkit-background-size: contain;
+			     -o-background-size: contain;
+			        background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&:before {			
+			left: 0;			
+			background-image: url('../img/border-left.png');
+			background-position: 100% 50%;		
+		}
+		&:after {
+			right: 0;			
+			background-image: url('../img/border-right.png');
+			background-position: 0 50%;
+		}
 	}
-	> .deals__carousel-pagination .swiper-pagination-bullet {
-	  margin: 5px 0;
-	  display: block;
+	&__item {
+		position: relative;
+		display: inline-block;
+		size: 270px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		padding: 10px;
+		margin: 5px 5px 25px;
+		-webkit-border-radius: 50%;
+		        border-radius: 50%;
+		background-image: url('../img/object_bg.png');
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			obect-position: 50%;
+		}
+		&_adress {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 15px 35px 30px;
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+			background-color: rgba(0, 0, 51, .7);
+			text: #fff 18px;
+		}
+		&_open {
+			position: absolute 0;
+			background: url('../img/glass.png') no-repeat rgba(86, 171, 214, .7);
+			background-position: 60% 40%;
+			@include transition(.3s);
+			opacity: 0;
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		}
+		&:hover {
+			.handedover__item_open {
+				opacity: 1;
+			}
+		}
 	}
 }
 
-
-.swiper-container-horizontal {
-	> .deals__carousel-pagination {
-	  bottom: 0;
-	  left: 0;
-	  width: 100%;
-	}
-
-	 > .deals__carousel-pagination .swiper-pagination-bullet {
-	  margin: 0 5px;
-	}
-}
