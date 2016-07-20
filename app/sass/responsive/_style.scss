@@ -38,6 +38,13 @@
 		padding-right: 15px;
 		font-size: 12px;
 	}
+
+	.p-projects__item {
+		margin: 0 15px 30px;
+	}
+	.p-projects__wrap {
+		margin: 0 -15px;
+	}
 }
 
 @media only screen and (max-width: 980px) {
@@ -65,6 +72,9 @@
 			margin: 0;
 			float: right;
 		}
+	}
+	.p-projects__item {
+        flex-basis: 46%;
 	}
 }
 
@@ -151,6 +161,15 @@
 		h3 {
 			margin: 0;	
 		}
+	}
+	.p-projects__item {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+	.p-projects__wrap {
+		margin: 0;
 	}
 }
 

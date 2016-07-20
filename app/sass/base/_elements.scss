@@ -12,4 +12,14 @@
 		vertical-align: top;
 		margin-top: 5px;
 	}
+	&_marker {
+		size: 14px 20px;
+		margin-right: 5px;
+		vertical-align: text-bottom;
+		background-image: url('../img/market.png');
+	    background-position: -16px 0;
+	    -webkit-background-size: cover;
+	         -o-background-size: cover;
+	            background-size: cover;
+	}
 }
