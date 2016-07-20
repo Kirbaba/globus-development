@@ -47,9 +47,12 @@
 				}
 			}
 			&:hover {
-				ul {
-					display: block;
+				@include respondTo(desktop){
+					ul {
+						display: block;
+					}
 				}
+
 			}
 		}
 	}

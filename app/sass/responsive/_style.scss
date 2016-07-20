@@ -1,9 +1,71 @@
-@media only screen and (max-width: 1024px) {
-	
+@media only screen and (max-width: 1170px) {
+	.objects{
+		text-align: center;
+		&__item {
+			width: 156px;
+			margin: 15px 25px;
+			display: inline-block;
+			float: none;
+		}
+	}
+	.banner__inner_desc {
+		top: 30px;
+	}
+	.handedover__item {
+		margin: 5px 50px 25px;
+	}
+	.header__flex {
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+	}
+
+	.header__works {
+        flex-basis: 35%;
+	    &_item {
+	    	display: none;
+	    }
+	}
+	.header__contacts {
+		flex-basis: 25%;
+	}
+	.header__logo {
+		-webkit-flex-basis: 40%;
+		        flex-basis: 40%;
+	}
+
+	.navigation ul li a {
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 980px) {
-	
+	.header__contacts {
+		flex-basis: 30%;
+	}
+	.header__works {
+        flex-basis: 30%;
+    }
+	.navigation ul li a {
+		padding: 12px 5px;
+	}
+	.partners__item {
+		margin: 15px 10px; 
+		height: 150px;
+	}
+	.footer__social {
+		width: 40%;
+	}
+	.footer__contacts {
+		width: 60%;
+		text-align: right;
+		p {
+			text-align: right;
+			margin: 0;
+			float: right;
+		}
+	}
 }
 
 @media only screen and (max-width: 770px) {
@@ -11,7 +73,85 @@
 }
 
 @media only screen and (max-width: 736px) {
-	
+	.header__logo {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    text-align: center;
+	}
+	.header__contacts {
+		-webkit-flex-basis: 100%;
+		        flex-basis: 100%;
+	    text-align: center;
+	    padding: 0 15%;
+	}
+	.news__item {
+		width: 100%;
+	}
+	.news h2, .partners h2, .handedover h2,  .deals h2 {
+		word-wrap: break-word;
+		&:before, &:after {
+			content: none;
+		}
+	}
+	.handedover__item {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.partners__item {
+		width: 100%;
+		margin: 15px 0;
+	}
+	.footer__social, .footer__contacts {
+		width: 100%;
+		text-align: center;
+	}
+	.footer__social_link {
+		float: none;
+		display: inline-block;
+	}
+	.footer__contacts {
+		p {
+			float: none;
+			text-align: center;
+		}
+	}
+	.map__form {
+		position: relative;
+		right: initial;
+		width: 100%;
+		&_box {
+			padding: 30px;
+		}
+	}
+	.deals h2 {
+		span {
+			
+			text-align: center;
+			padding: 0;
+		}
+	}
+	.objects__item {
+		margin: 15px 0;
+		padding: 0;
+	}
+	.banner__inner_desc {
+		position: relative;
+		right: initial;
+		width: 80%;
+		margin: 0 auto;
+		height: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		top: 80px;
+		&_btn {
+			float: none;
+		}
+		h3 {
+			margin: 0;	
+		}
+	}
 }
 
 @media only screen and (max-width: 500px) {

@@ -18,15 +18,25 @@ var swiper_deals = new Swiper('.deals__carousel', {
     spaceBetween: 30,
     paginationClickable: true,
     loop: true,
-    slidesPerView: 3
+    slidesPerView: 3,
+    breakpoints: {
+	 	1024: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+    	768: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        }
+    }
 });
 
 
 
-$(window).resize(function() {
+/*$(window).resize(function() {
 	var ww = $(window).width();
 	var c = 495  / 1170;
-	var sheight = ww * c;
+	var sheight = ww * 0.75;
 	var banner = document.getElementsByClassName('banner')[0];
 	if (ww < 1170) {
 		banner.style.height = sheight + 'px';
@@ -35,4 +45,4 @@ $(window).resize(function() {
 		banner.style.height = '500px';
 	};
 	swiper.onResize();
-});
+});*/
