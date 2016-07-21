@@ -57,10 +57,12 @@
 			        box-sizing: border-box;
 			margin-bottom: 30px;
 			&_content {
+				float: left;
+				width: 100%;
 				-webkit-box-sizing: border-box;
 				   -moz-box-sizing: border-box;
 				        box-sizing: border-box;
-			    padding: 15px 125px;
+			    padding: 15px 125px 10px;
 			}
 			&_foot {
 				float: left;
@@ -70,8 +72,33 @@
 				        box-sizing: border-box;
 			    padding: 10px 40px;
 			    background-color: $blue;
+			    display: flex;			    
+	            flex-flow: row wrap;
+	            -webkit-justify-content: space-between;
+	                    justify-content: space-between;
+	            color: #FFF;
+	            -webkit-align-items: center;
+	                    align-items: center;
+		        strong {
+					text: #e7e7e7 24px;
+					.icon_phone {
+						size: 23px;
+						margin-top: 0;
+						margin-right: 5px;
+						vertical-align: middle;
+					}
+				}    
 			}
 			
+			&_date {
+				text: #999999 16px;
+			}
+			&_more {
+				@extend .banner__inner_desc_btn;
+				font-size: 15px;
+				padding: 10px 25px;
+				margin: 0;
+			}
 			&_thumb {
 				float: left;
 				width: 1 / 3 * 100%;
@@ -87,6 +114,72 @@
 				    border: 1px solid #F3F3F3;
 				    -webkit-border-radius: 2px;
 				            border-radius: 2px;
+				}
+				small {
+					text: #999999 16px;
+					margin: 5px 15px;
+					vertical-align: middle;
+					display: inline-block;
+				}
+			}
+			&_info {
+				float: left;
+				width: 2 / 3 * 100%;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding: 0 50px;
+				h3 {
+					font-family: $gth-b;
+					text: $blue 27px;
+					margin: 0 0 10px; 
+				}
+			}
+			&_price {
+				float: left;
+				width: 100%;
+				margin: 20px 0;				
+				&_usd {
+					font-family: $gth-b;
+					text: #0087ca 24px;
+					-webkit-box-sizing: border-box;
+					   -moz-box-sizing: border-box;
+					        box-sizing: border-box;		
+					padding-right: 20px;
+					border-right: 2px solid $blue;		    
+				}
+				&_ukh {
+					font-family: $gth-b;
+					text: $blue 24px;
+					-webkit-box-sizing: border-box;
+					   -moz-box-sizing: border-box;
+					        box-sizing: border-box;	
+					padding: 0 20px;	
+				}
+				&_translate {
+					font-family: $gth-i;
+					text: $blue 16px;
+					-webkit-box-sizing: border-box;
+					   -moz-box-sizing: border-box;
+					        box-sizing: border-box;
+					padding: 0 20px;
+					text-decoration: underline;
+					&:hover {
+						color: darken($blue, 10%);
+					}
+				}
+			}
+			&_area {
+				float: left;
+				width: 100%;
+				span {
+					text: #848484 16px;
+					margin-right: 35px;
+					b {
+						text: $blue;
+						vertical-align: baseline;
+						margin-left: 2px;
+					}
 				}
 			}
 		}

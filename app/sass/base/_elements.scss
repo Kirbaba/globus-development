@@ -22,4 +22,46 @@
 	         -o-background-size: cover;
 	            background-size: cover;
 	}
+	&_photo {
+		size: 20px 16px;
+		background-image: url('../img/photo-camera.png');
+		margin-right: 5px;
+		vertical-align: text-bottom;
+		margin-bottom: 2px;
+	}
+	&_visits {
+		size: 22px 16px;
+		background-image: url('../img/eye-open.png');
+		margin-right: 5px;
+		vertical-align: text-bottom;
+		margin-bottom: 2px;
+	}
+	&_watch {
+		size: 23px;
+		background-image: url('../img/watch.png');
+		vertical-align: bottom;
+		margin-right: 5px;
+	}
+
+	&_check {
+		size: 16px 17px;
+		background-image: url('../img/check.png');
+		margin-right: 5px;
+		vertical-align: text-top;
+	}
+}
+
+.marker {
+	display: inline-block;
+	text: #fff uppercase 15px;
+	margin-right: 5px;
+	padding: 0 15px;
+	height: 25px;
+	line-height: 25px;
+	&_fast {
+		background-color: #B93021;
+	}
+	&_certified {
+		background-color: $green;
+	}
 }
