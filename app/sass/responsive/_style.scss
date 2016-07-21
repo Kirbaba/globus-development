@@ -45,6 +45,15 @@
 	.p-projects__wrap {
 		margin: 0 -15px;
 	}
+	.p-deals__item_price_translate {
+		padding-left: 0;
+		float: left;
+		width: 100%;
+	}
+	.p-deals__item_content {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 }
 
 @media only screen and (max-width: 980px) {
@@ -76,6 +85,24 @@
 	.p-projects__item {
         flex-basis: 46%;
 	}
+	.marker {
+		margin-bottom: 5px;
+	}
+	.p-deals__item_price_usd {
+		width: 100%;
+		float: left;
+		border: none;
+	}
+	.p-deals__item_content {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.p-deals__item_price_ukh {
+		width: 100%;
+		float: left;
+		padding-left: 0;
+	}
+	
 }
 
 @media only screen and (max-width: 770px) {
@@ -170,6 +197,21 @@
 	}
 	.p-projects__wrap {
 		margin: 0;
+	}
+	.p-deals__item_info {
+		padding: 0 10px;
+	}
+	.p-deals__item_thumb, .p-deals__item_info {
+		width: 100%;
+	}
+	.p-deals__item_area {
+		span {
+			display: block;
+		}
+	}
+	.p-deals__item_foot strong {
+		font-size: 16px;
+		margin: 10px 0;
 	}
 }
 
