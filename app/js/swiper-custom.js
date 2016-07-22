@@ -2,7 +2,6 @@
 
 var swiper = new Swiper('.banner', {
     pagination: '.swiper-pagination',
-    paginationClickable: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     spaceBetween: 30,
@@ -12,7 +11,6 @@ var swiper = new Swiper('.banner', {
 
 var swiper_deals = new Swiper('.deals__carousel', {
     pagination: '.deals__carousel-pagination',
-    paginationClickable: true,
     nextButton: '.deals__carousel-next',
     prevButton: '.deals__carousel-prev',
     spaceBetween: 30,
@@ -20,15 +18,22 @@ var swiper_deals = new Swiper('.deals__carousel', {
     loop: true,
     slidesPerView: 3,
     breakpoints: {
-	 	1024: {
+        1024: {
             slidesPerView: 2,
             spaceBetween: 40
         },
-    	768: {
+        768: {
             slidesPerView: 1,
             spaceBetween: 10
         }
     }
+});
+
+var store__info = new Swiper('.p-store__info_carousel', {
+    nextButton: '.p-store__info_carousel-next',
+    prevButton: '.p-store__info_carousel-prev',
+    spaceBetween: 0,
+    loop: true,
 });
 
 
