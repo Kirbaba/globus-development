@@ -1,4 +1,4 @@
- var swiper_arr = [];
+var swiper_arr = [];
 
 var swiper = new Swiper('.banner', {
     pagination: '.swiper-pagination',
@@ -34,6 +34,13 @@ var store__info = new Swiper('.p-store__info_carousel', {
     prevButton: '.p-store__info_carousel-prev',
     spaceBetween: 0,
     loop: true,
+});
+
+$(".p-store__photoreport_item").click(function(event) {
+    event.preventDefault();
+    var slide = $(this).data("slide");
+    slide = (slide - 1);
+    store__info.slideTo(slide);
 });
 
 
