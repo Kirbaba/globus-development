@@ -341,6 +341,17 @@
 	.p-buildingmap_plug_floor-1 {
 		bottom: 225px;
 	}
+	.p-deals__nav_flex {
+		-webkit-align-items: flex-start;
+		        align-items: flex-start;
+	}
+	.p-deals__nav_cites {
+		padding: 0;
+	}
+	.p-deals__search_currency_title, .p-deals__search_area_title {
+		width: 100%;
+		margin-bottom: 5px;
+	}
 }
 
 @media only screen and (max-width: 500px) {

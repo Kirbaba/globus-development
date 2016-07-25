@@ -24,7 +24,10 @@
 				    -webkit-box-sizing: border-box;
 				       -moz-box-sizing: border-box;
 				            box-sizing: border-box;
-				    padding: 0 50px;				
+				    padding: 0 50px;	
+				li {
+					margin: 5px;
+				}			
 			}
 			&_btn {
 				@extend .p-projects__tab_btn;
@@ -182,6 +185,108 @@
 						margin-left: 2px;
 					}
 				}
+			}
+		}
+		&__search {
+			float: left;
+			width: 100%;
+			margin: 10px 0;
+			&_currency {
+				float: left;
+				margin: 5px 0;
+				margin-right: 25px;
+				width: 100%;
+				&_title {
+					display: inline-block;
+					width: 215px;
+				}
+			}
+			&_area {
+				float: left;
+				width: 100%;
+				margin: 5px 0;
+				&_title {
+					display: inline-block;
+					width: 215px;
+				}
+			}
+			&_inp {
+				width: 65px;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				vertical-align: baseline;
+				font-size: 14px;
+				padding-left: 5px;
+				
+			}
+			&_btn {
+				text: #fff uppercase 12px;
+				background-color: $blue;
+				outline: none;
+				border: none;
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				padding: 5px 10px;
+				cursor: pointer;
+				margin: 5px 0;
+				@include transition(.2s);
+				&:hover {
+					background-color: lighten($blue, 15%);
+				}
+			}
+			label {
+				font-size: 12px;
+			}
+			input[type="radio"] {
+			    display:none;
+			}
+			small {
+				display: inline-block;
+				margin-right: 20px;
+			}
+			input[type="radio"] + label {
+		    font-size:16px;
+			display: inline-block;
+			margin: 0 15px 0 0;
+			font-family: $gth-i;
+			}
+			input[type="radio"] + label span {
+			    display: inline-block;
+			    size: 15px;
+			    margin:-1px 5px 0 0;
+			    vertical-align:middle;
+			    cursor:pointer;
+			    -moz-border-radius:  50%;
+			    border-radius:  50%;
+			}
+
+			input[type="radio"] + label span {
+			    background-color: #FFF;
+			    -webkit-box-sizing: border-box;
+			       -moz-box-sizing: border-box;
+			            box-sizing: border-box;
+			}
+
+			input[type="radio"]:checked + label span{
+			     background-color: #68ccfd;
+			     background-position: center;
+			     background-repeat: no-repeat;
+			     color: $blue;
+			     border: 3px solid #fff;
+			}
+
+			input[type="radio"] + label span,
+			input[type="radio"]:checked + label span {
+			  -webkit-transition:background-color 0.4s linear;
+			  -o-transition:background-color 0.4s linear;
+			  -moz-transition:background-color 0.4s linear;
+			  transition:background-color 0.4s linear;
+			}
+
+			input[type="radio"]:checked + label {
+				color: $blue;
 			}
 		}
 	}

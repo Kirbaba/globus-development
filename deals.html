@@ -152,15 +152,59 @@
 						<span>м. Житомир</span>
 					</a>
 				</li>
-				<li><a href="#" class="p-deals__nav_btn">
-						<i class="icon icon_marker"></i>
-						<span>м. Львів</span>
-					</a>
-				</li>
 			</ul>
-			<!-- close .p-deals__nav_cites -->
+			<!-- close .p-deals__nav_cites -->			
 		</div>
 		<!-- close .container p-deals__nav_flex -->
+
+		<!-- open .p-deals__search -->
+		<div class="p-deals__search">
+			<!-- open .container -->
+			<div class="container">
+				<!-- open .p-deals__search_currency -->
+				<div class="p-deals__search_currency">
+					<!-- open .p-deals__search_currency_title -->
+					<div class="p-deals__search_currency_title">
+						<small>Валюта: </small>
+						<input type="radio" name="p-deals__search_currency" class="p-deals__search_check" id="p-deals__search_check_ukg"/>
+						<label for="p-deals__search_check_ukg">
+							<span></span> ГРН
+						</label>
+						<input type="radio" name="p-deals__search_currency" class="p-deals__search_check" id="p-deals__search_check_usd"/>
+						<label for="p-deals__search_check_usd">
+							<span></span> $
+						</label>		
+					</div>
+					<!-- close .p-deals__search_currency_title -->
+					
+
+					<label for="p-deals__search_price_from">від</label>
+					<input type="number" class="p-deals__search_inp" id="p-deals__search_area_from" min="0" />
+					<label for="p-deals__search_price_to">до</label>
+					<input type="number" class="p-deals__search_inp" id="p-deals__search_area_to" min="0"/>
+				</div>
+				<!-- close .p-deals__search_currency -->
+				<!-- open .p-deals__search_area -->
+				<div class="p-deals__search_area">
+					<!-- open .p-deals__search_area_title -->
+					<div class="p-deals__search_area_title">
+						<small>Площа квартири:</small>
+					</div>
+					<!-- close .p-deals__search_area_title -->
+					
+					<label for="p-deals__search_area_from">від</label>
+					<input type="number" class="p-deals__search_inp" id="p-deals__search_area_from" min="0" />
+					<label for="p-deals__search_area_to">до</label>
+					<input type="number" class="p-deals__search_inp" id="p-deals__search_area_to" min="0"/>	
+				</div>
+				<!-- close .p-deals__search_area -->
+				<button type="subite" class="p-deals__search_btn">Застосувати фільтр</button>
+			</div>
+			<!-- close .container -->
+			
+		</div>
+		<!-- close .p-deals__search -->
+
 	</nav>
 	<!-- close .p-deals__nav -->
 
