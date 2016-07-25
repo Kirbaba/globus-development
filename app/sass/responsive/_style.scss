@@ -66,6 +66,16 @@
 	 .p-store__photoreport h3:after {
 	 	width: 75%;
 	 }
+	 .p-buildingmap__trees {
+	 	display: none;
+	 }
+	 .p-buildingmap__box {
+	 	overflow: hidden;
+	 }
+	 .p-buildingmap__inner img {
+	 	position: relative;
+	 	left: -50px;
+	 }
 }
 
 @media only screen and (max-width: 980px) {
@@ -114,7 +124,18 @@
 		float: left;
 		padding-left: 0;
 	}
-	
+	.p-buildingmap__inner img {
+		left: -125px;
+	}
+	.p-buildingmap_plug_floor-top {
+		left: 10%;
+	}
+	.p-buildingmap_plug_floor-mid {
+		right: 5%;
+	}
+	.p-buildingmap_plug_floor-1 {
+		left: 5%;
+	}
 }
 
 @media only screen and (max-width: 810px) {
@@ -298,6 +319,27 @@
 		&:after {
 			content: none;
 		}
+	}
+	.p-buildingmap_plug {
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		    right: initial;
+		&:before {
+			content: none;
+		}
+	}
+	.p-buildingmap__inner img {
+		left: -350px;
+	}
+	.p-buildingmap_plug_floor-mid {
+		top: 225px;
+	}
+	.p-buildingmap_plug_floor-1 {
+		bottom: 225px;
 	}
 }
 
