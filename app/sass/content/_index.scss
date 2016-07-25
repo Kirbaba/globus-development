@@ -378,6 +378,8 @@
 			height: 100%;
 			object-fit: cover;
 			obect-position: 50%;
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
 		}
 		&_adress {
 			position: absolute;
@@ -554,6 +556,7 @@
 			   -moz-box-sizing: border-box;
 			        box-sizing: border-box;
 			padding: 0 25px;
+			
 			
 		}
 	}
