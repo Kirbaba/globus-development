@@ -2,7 +2,6 @@ var gulp = require('gulp'), // Подключаем Gulp
     sass = require('gulp-sass'), //Подключаем Sass пакет,
     browserSync = require('browser-sync'), // Подключаем Browser Sync
     concat = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
-    uglify = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
     rename = require('gulp-rename'), // Подключаем библиотеку для переименования файлов
     del = require('del'), // Подключаем библиотеку для удаления файлов и папок
     imagemin = require('gulp-imagemin'), // Подключаем библиотеку для работы с изображениями
