@@ -1,0 +1,66 @@
+.kalush{
+  width: 100%;
+  float: left;
+  display: block;
+  background-image: url("../img/kalush-fon.png");
+  background-position-y: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  h2{
+    margin: 30px 0;
+    color: #003;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: $gth-b;
+  }
+}
+.storey{
+  border-top: 2px solid #66ccff;
+  background-color: #fff;
+  border-bottom: 4px solid #000;
+  font-size: 18px;
+  font-family: $gth-b;
+  text-align: center;
+  min-width: 200px;
+  display: inline-block;
+  margin: 0 20px;
+  color: #003;
+  padding: 5px 0;
+  box-sizing: border-box;
+  .first-line{
+    width: 100%;
+    float: left;
+    strong{
+      font-size: 25px;
+    }
+  }
+  .second-line{
+    font-size: 16px;
+    font-family: $gth-n;
+
+  }
+}
+.storey:hover{
+  background-color: #66ccff;
+  color: #fff;
+}
+.plan-poverh{
+  width: 100%;
+  height: 620px;
+  float: left;
+margin: 40px 0;
+  img{
+    width: auto;
+    height: 100%;
+  }
+}
+.rect-info{
+  background-image: url("../img/rect-obj.png");
+  float: left;
+	position: relative;
+	width: 100%;
+}
