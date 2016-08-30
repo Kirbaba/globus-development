@@ -21,7 +21,7 @@
 			&:hover {
 				background-color: $blue;
 			}
-		}			
+		}
 	}
 	&__contacts {
 		float: left;
@@ -31,7 +31,33 @@
 			float: left;
 			margin: 20px 15px;
 			text: #fff 21px;
-			 
+
 		}
 	}
+}
+#modal_form{
+	display: none;
+	position: fixed;
+	top: 26%;
+	left: 38%;
+	z-index: 10;
+	.map__form {
+    position: relative;
+    top: 0;
+    right: 0;
+	}
+}
+#overlay {
+	z-index:3;
+	position:fixed;
+	background-color:#000;
+	opacity:0.8;
+	-moz-opacity:0.8;
+	filter:alpha(opacity=80);
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	cursor:pointer;
+	display:none;
 }

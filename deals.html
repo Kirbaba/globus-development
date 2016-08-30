@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/libs.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
@@ -50,13 +50,13 @@
             <span class="icon icon_phone"></span>
             <!-- open .header__contacts_numbers -->
             <div class="header__contacts_numbers">
-                
+
                 <h4>(068) 010-04-04</h4>
                 <h4>(068) 008-04-04</h4>
                 <h4>(050) 409-04-04</h4>
             </div>
             <!-- close .header__contacts_numbers -->
-            <button class="header__contacts_btn">замовити дзвінок</button>
+            <button id="go" class="header__contacts_btn">замовити дзвінок</button>
         </div>
         <!-- close .header__contacts -->
     </div>
@@ -72,7 +72,7 @@
         <div class="navigation__btn"><span></span></div>
         <!-- close .navigation__btn -->
 
-        <ul class="navigation__menu"> 
+        <ul class="navigation__menu">
             <li><a href="#">Головна</a></li>
             <li><a href="#">Проекти</a></li>
             <li><a href="#">Спеціальні пропозиції</a></li>
@@ -84,18 +84,18 @@
                     <li><a href="#">Логістичні центри</a></li>
                     <li><a href="#">Офіси</a></li>
                     <li><a href="#">Земельні ділянки</a></li>
-                    <li><a href="#">Склади</a></li>                    
+                    <li><a href="#">Склади</a></li>
                 </ul>
             </li>
             <li><a href="#">Акції</a></li>
             <li><a href="#">Новини</a></li>
             <li><a href="#">Тендери</a></li>
             <li><a href="#">Контакти</a></li>
-        </ul>    
-        
+        </ul>
+
     </div>
     <!-- close .container -->
-    
+
 </nav>
 <!-- close .navigation -->
 
@@ -449,12 +449,27 @@
 		    	<p>тел: +38 0332 789281;</p>
 		    	<p>тел/моб: +38 050 409 04 04</p>
 		    </div>
-		    <!-- close .footer__contacts -->	
+		    <!-- close .footer__contacts -->
 		</div>
 		<!-- close .container -->
-	    
+
 	</footer>
 	<!-- @@close-->
+	<div id="modal_form">
+
+			<!-- open .map__form -->
+			<form action="#" class="map__form">
+				<h3>З питань розгляду пропозицій та участі  в проектах звертатись в центр продажу:</h3>
+				<!-- open .map__form_box -->
+				<div class="map__form_box">
+					<input type="text" class="map__form_inp" placeholder="Як до Вас звертатися?" name="contact_name" />
+					<input type="tel" class="map__form_inp" placeholder="Введіть номер моб. телефону" name="contact_phone" />
+					<button type="submit" id="modal_close" class="map__form_btn">замовити дзвінок</button>
+				</div>
+				<!-- close .map__form_box -->
+			</form>
+</div>
+<div id="overlay"></div>
 </body>
 <script src='https://code.jquery.com/jquery-2.2.2.min.js' type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"></script>
@@ -463,4 +478,5 @@
 </script>
 <script src="js/script.min.js" type="text/javascript"></script>
 </html>
+
 <!-- end footer.html-->
